@@ -5,11 +5,10 @@ class Appointment
   def initialize(date, doctor)
     @date = date
     @doctor = doctor
+    doctor_instance = Doctor.new(doctor)
+    doctr_instance.add_appointment(self)
   end
 
-  def appointments
-    @appointments
-  end
 
 
 
