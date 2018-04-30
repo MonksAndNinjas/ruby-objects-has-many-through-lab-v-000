@@ -7,6 +7,10 @@ class Doctor
     @appointments = []
   end
 
+  def appointments
+    @appointments
+  end
+
   def add_appointment
     
   end
